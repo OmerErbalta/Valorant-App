@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MatchDetail: View {
+struct LiveMatchDetailView: View {
     let match:MatchViewModel
     var body: some View {
         ZStack{
@@ -42,5 +42,5 @@ struct MatchDetail: View {
 }
 
 #Preview {
-    MatchDetail(match: MatchViewModel(match: Match(teamOneName: "TeamOne", teamTwoName: "TeamTwo", matchURL: "URL", eventName: "eventName", eventIconURL: "eventIcon", matchTime: "time", eta: "eta")))
+    LiveMatchDetailView(match: MatchViewModel(match: Match(teamOneName: "TeamOne", teamTwoName: "TeamTwo", matchURL: "URL", eventName: "eventName", eventIconURL: "eventIcon", matchTime: "time", eta: "eta")))
 }
